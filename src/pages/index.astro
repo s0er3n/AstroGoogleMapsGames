@@ -1,8 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 const { content } = Astro.props;
-
-
+import { Img } from "astro-imagetools/components";
+import earth from  "/src/images/earth.png";
+import cover from  "/src/images/cover.png";
+import streetview from "/src/images/streetview.png";
+import vote from "/src/images/vote.png";
+import capture from "/src/images/capture.png";
 ---
 
 <Layout title="Google Maps Games">
@@ -15,7 +19,7 @@ const { content } = Astro.props;
 				</div>
 			</div>
 			<div>
-				<img src="earth.png" class="aspect-square w-24 md:w-96" alt="earth" />
+				<img src={earth} class="aspect-square w-24 md:w-96" alt="earth" />
 			</div>
 			<div>
 				<h1 class="text-white font-black text-6xl text-center">Google Maps Games</h1>
@@ -29,27 +33,28 @@ const { content } = Astro.props;
 			<div class=" bg-slate-900 rounded-lg max-w-full">
 				<a href="https://geobingo.io" target="_blank">
 					<div class="flex flex-col justify-center items-center w-full h-full  ">
+
 						<div class="flex flex-col justify-center  w-full">
 							<div class="flex w-full items-center justify-center ">
-								<img src="/cover.png" class="max-w-full object-cover">
+								<img src={cover} class="max-w-full object-cover"/>
 							</div>
 							<div class="text-white w-full text-center text-xl">scavenger hunt game in google street view with a multiplayer</div>
 						</div>
 						<div class="md:flex items-center justify-center  w-full p-24">
 							<div class="flex  items-center justify-between ">
-								<img src="/streetview.png" class="max-w-wull object-cover fit rounded-md shadow-sm">
+								<img src={streetview} class="max-w-wull object-cover fit rounded-md shadow-sm">
 							</div>
 							<div class="text-white text-4xl w-full text-center">search for the prompts</div>
 						</div>
 						<div class="md:flex items-center justify-center  w-full p-24">
 							<div class="text-white text-6xl w-full text-center">capture prompts</div>
 							<div class="flex max-w-full items-center justify-around ">
-								<img src="/capture.png" class="max-w-full object-cover fit rounded-md shadow-sm">
+								<img src={capture} class="max-w-full object-cover fit rounded-md shadow-sm">
 							</div>
 						</div>
 						<div class="md:flex items-center justify-center  w-full p-24">
 							<div class="flex max-w-full items-center justify-center ">
-								<img src="/vote.png" class="max-w-full w-full rounded-md shadow-sm">
+								<img src={vote} class="max-w-full w-full rounded-md shadow-sm">
 							</div>
 							<div class="text-white text-3xl w-full text-center"> vote to accept submissions</div>
 						</div>
