@@ -7,6 +7,8 @@ import cover from  "/src/images/cover.png";
 import streetview from "/src/images/streetview.png";
 import vote from "/src/images/vote.png";
 import capture from "/src/images/capture.png";
+import stars  from "/src/images/stars.png";
+console.log(stars)
 ---
 
 <Layout title="Google Maps Games">
@@ -65,9 +67,9 @@ import capture from "/src/images/capture.png";
 	</main>
 
 </Layout>
-<style>
+<style define:vars={{stars}}>
 	.sliding-background {
-		background: black url("stars.png") repeat;
+		background: black url(/assets/stars@2000w.809d1972.png) repeat;
 		min-height: 1080px;
 		width: 5076px;
 		animation: slide 120s linear infinite;
