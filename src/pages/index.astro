@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro";
+const { content } = Astro.props;
+
+
+---
+
+<Layout title="Google Maps Games">
+	<main class="grow min-h-full min-w-full
+">
+		<div class="md:flex-row flex-col flex w-full justify-evenly items-center h-96 ">
+
+			<div class="absolute w-full overflowthing h-96 ">
+				<div class="relative -z-20 sliding-background">
+				</div>
+			</div>
+			<div>
+				<img src="earth.png" class="aspect-square w-24 md:w-96" alt="earth" />
+			</div>
+			<div>
+				<h1 class="text-white font-black text-6xl text-center">Google Maps Games</h1>
+				<h1 class="text-white font-black text-xl py-2 text-center">Best games based on Google Maps</h1>
+			</div>
+
+		</div>
+		<div class="py-8"></div>
+
+		<div class="max-w-full">
+			<div class=" bg-slate-900 rounded-lg max-w-full">
+				<a href="https://geobingo.io" target="_blank">
+					<div class="flex flex-col justify-center items-center w-full h-full  ">
+						<div class="flex flex-col justify-center  w-full">
+							<div class="flex w-full items-center justify-center ">
+								<img src="/cover.png" class="max-w-full object-cover">
+							</div>
+							<div class="text-white w-full text-center text-xl">scavenger hunt game in google street view with a multiplayer</div>
+						</div>
+						<div class="md:flex items-center justify-center  w-full p-24">
+							<div class="flex  items-center justify-between ">
+								<img src="/streetview.png" class="max-w-wull object-cover fit rounded-md shadow-sm">
+							</div>
+							<div class="text-white text-4xl w-full text-center">search for the prompts</div>
+						</div>
+						<div class="md:flex items-center justify-center  w-full p-24">
+							<div class="text-white text-6xl w-full text-center">capture prompts</div>
+							<div class="flex max-w-full items-center justify-around ">
+								<img src="/capture.png" class="max-w-full object-cover fit rounded-md shadow-sm">
+							</div>
+						</div>
+						<div class="md:flex items-center justify-center  w-full p-24">
+							<div class="flex max-w-full items-center justify-center ">
+								<img src="/vote.png" class="max-w-full w-full rounded-md shadow-sm">
+							</div>
+							<div class="text-white text-3xl w-full text-center"> vote to accept submissions</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</main>
+
+</Layout>
+<style>
+	.sliding-background {
+		background: black url("stars.png") repeat;
+		min-height: 1080px;
+		width: 5076px;
+		animation: slide 120s linear infinite;
+	}
+
+	.overflowthing {
+		overflow: hidden;
+	}
+
+	@keyframes slide {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+
+		100% {
+			transform: translate3d(-1692px, 0, 0);
+		}
+	}
+</style>

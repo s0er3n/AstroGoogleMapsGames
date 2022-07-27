@@ -1,0 +1,39 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props as Props;
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<title>{title}</title>
+</head>
+
+<body class="bg-black">
+	<div class="min-h-full flex flex-col">
+		<div class="flex-none w-screen min-h-6 bg-slate-700 text-center text-white font-black">This site is in no way
+			affiliated with
+			Google/Google Maps.</div>
+		<slot class="min-h-full " />
+	</div>
+</body>
+
+</html>
+<style>
+	html {
+		min-height: 100%;
+		display: flex;
+	}
+
+	body {
+		flex: 1;
+	}
+</style>
