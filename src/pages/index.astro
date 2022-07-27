@@ -8,7 +8,7 @@ import streetview from "/src/images/streetview.png";
 import vote from "/src/images/vote.png";
 import capture from "/src/images/capture.png";
 import stars  from "/src/images/stars.png";
-console.log(stars)
+let starsOptimized = "url(" + stars + ")";
 ---
 
 <Layout title="Google Maps Games">
@@ -67,9 +67,9 @@ console.log(stars)
 	</main>
 
 </Layout>
-<style define:vars={{stars}}>
+<style define:vars={{starsOptimized}}>
 	.sliding-background {
-		background: black url(/assets/stars@2000w.809d1972.png) repeat;
+		background: black var(--starsOptimized) repeat;
 		min-height: 1080px;
 		width: 5076px;
 		animation: slide 120s linear infinite;
