@@ -11,59 +11,47 @@ import stars  from "/src/images/stars.png?format=webp&q=80";
 let starsOptimized = "url(" + stars + ")";
 ---
 
-<Layout title="Google Maps Games">
-	<main class="grow min-h-full min-w-full
+<Layout title="GroupGames.io">
+	<main class="grow min-h-full min-w-full p-4
 ">
-		<div class="md:flex-row flex-col flex w-full justify-evenly items-center h-96 ">
+		<div class="md:flex-row flex-col flex w-full justify-evenly items-center h-full">
 
-			<div class="absolute w-full overflowthing h-96 ">
-				<div class="relative -z-20 sliding-background">
+			<div class="absolute w-full overflowthing h-full -z-20">
+				<div class="relative -z-20 sliding-background h-full">
 				</div>
 			</div>
 			<div>
-				<img src={earth} class="aspect-square w-24 md:w-96" alt="earth" />
-			</div>
-			<div>
-				<h1 class="text-white font-black text-6xl text-center">Google Maps Games</h1>
-				<h1 class="text-white font-black text-xl py-2 text-center">Best games based on Google Maps</h1>
+				<h1 class="text-white font-black text-xl md:text-6xl text-center">GroupGames.io</h1>
+				<h1 class="text-white font-black md:text-xl py-2 text-center">games made by me to have fun with a group of people</h1>
 			</div>
 
+      
 		</div>
-		<div class="py-8"></div>
+    <div class="h-full flex flex-col justify-center items-center">
+    <div class="grid md:grid-cols-3 justify-center items-center gap-4 p-2 w-full h-[178px]" >
+          <div class="rounded-md">
+        <a href="https://geobingo.io">
+            <Img src={"https://geobingo.io/cover.png"} alt="geobingo logo"/>
+          </a>
+          </div>
+          <div class="flex items-center text-center bg-gray-900 w-full  justify-center h-[178px]">
+            <a href="https://WikiParty.org">
+            <span class="text-white text-6xl">WikiParty.org</span>
+            </a>
+          </div>
+          <div class="flex items-center text-center bg-slate-800 w-full justify-center h-[178px]">
+            <a href="https://WhenWasThisPhotoTaken.com">
+            <span class="text-white text-3xl">WhenWasThisPhotoTaken.com</span>
+            </a>
+          </div>
+          <div class="flex items-center text-center bg-slate-800 w-full justify-center h-[178px]">
+            <a href="https://song-game.netlify.app/">
+            <span class="text-white text-6xl">Song Game</span>
+            </a>
+          </div>
+    </div>
+    </div>
 
-		<div class="max-w-full">
-			<div class=" bg-slate-900 rounded-lg max-w-full">
-				<a href="https://geobingo.io" target="_blank">
-					<div class="flex flex-col justify-center items-center w-full h-full  ">
-
-						<div class="flex flex-col justify-center  w-full">
-							<div class="flex w-full items-center justify-center ">
-								<img src={cover} class="max-w-full object-cover"/>
-							</div>
-							<div class="text-white w-full text-center text-xl">scavenger hunt game in google street view with a multiplayer</div>
-						</div>
-						<div class="md:flex items-center justify-center  w-full p-24">
-							<div class="flex  items-center justify-between ">
-								<img src={streetview} class="max-w-wull object-cover fit rounded-md shadow-sm">
-							</div>
-							<div class="text-white text-4xl w-full text-center">search for the prompts</div>
-						</div>
-						<div class="md:flex items-center justify-center  w-full p-24">
-							<div class="text-white text-6xl w-full text-center">capture prompts</div>
-							<div class="flex max-w-full items-center justify-around ">
-								<img src={capture} class="max-w-full object-cover fit rounded-md shadow-sm">
-							</div>
-						</div>
-						<div class="md:flex items-center justify-center  w-full p-24">
-							<div class="flex max-w-full items-center justify-center ">
-								<img src={vote} class="max-w-full w-full rounded-md shadow-sm">
-							</div>
-							<div class="text-white text-3xl w-full text-center"> vote to accept submissions</div>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
 	</main>
 
 </Layout>
